@@ -13,9 +13,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    	    <link rel="stylesheet" href="css.css">
-	<link href="https://fonts.googleapis.com/css?family=B612+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono&display=swap" rel="stylesheet">
+		    <link rel="stylesheet" href="css.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
+		.mySlides {display:none;}
+
 		body{
 	background-repeat:no-repeat ;
     background-size: cover;
@@ -119,7 +123,6 @@ hr {
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a href="index.html">
 <img src="https://www.vippng.com/png/detail/44-445381_water-wave-icon-water-wave-icon-png.png"            class="rounded-circle" style="width:40px;height:40px;"></a>
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -144,25 +147,89 @@ hr {
         </ul>
     </div>
 </nav>
-<div id="wrapper">
-<h1><font color="white"><center><p>Technology</p></center></font></h1>
-<hr>
-<font color="white"><center><p></p>Sea scooter</center></font>
-<font color="white"><center><p>Sea scooter is a handheld deployable vehicle that increases your top speed when held. It has a top speed of 39.6 km/h. It will be rechargeable with lithium batteries and has a flashlight and a small minimap that can help you if you are lost.</p></center></font>
-<font color="white"><center><p>Small submarines</p></center></font>
-<font color="white"><center><p>They are small, versatile one or two people submersible capable of sustained high-speed travel over considerable distances. It can be used if you want to go mid distances for example from house to house.</p></center></font>
-<font color="white"><center><p>Big submarines</p></center></font>
-<font color="white"><center><p>The Cyclops is a mobile vehicle bay submarine. It is equipped with a vehicle bay capable of storing a Seamoth or Prawn Suit, and it can be modifiable. But if you want to go bigger and you have the money for a bigger and luxurious submarine, we recommend you some better ones as concept arts. We will make some cargo ones also. We have concept arts for them also.</p></center></font>
+<div class="w3-content w3-display-container">
+<div class="w3-display-container mySlides">
+  <img src="https://i.pinimg.com/originals/bc/b1/fd/bcb1fdce55957bfaa2ce1481fb904a2d.jpg" style="width:100%" style="height:100%">
+  <div class="w3-display-bottom w3-large w3-container w3-padding-16 w3-black">
+  Bio generator
+  </div>
 </div>
 
+<div class="w3-display-container mySlides">
+  <img src="https://energyeducation.ca/wiki/images/4/4a/BoilingWaterReactor.gif" style="width:100%"style="height:100%">
+  <div class="w3-display-bottom w3-large w3-container w3-padding-16 w3-black">
+  Nuclear generator
+  </div>
+</div>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="w3-display-container mySlides">
+  <img src="https://www.waseda.jp/top/assets/uploads/2018/07/5f19f8038b959234c30f03075d8068f4.jpg" style="width:100%"style="height:100%">
+  <div class="w3-display-bottom w3-large w3-container w3-padding-16 w3-black">
+  Thermal generator
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="http://www.daviddarling.info/images/types_of_water_turbine.jpg" style="width:100%"style="height:50%">
+  <div class="w3-display-bottom w3-large w3-container w3-padding-16 w3-black">
+  Water turbines
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="http://isle-eco.com/wp-content/uploads/2016/02/residential_solar_pv_schematic_diagram2.jpg" style="width:100%"style="height:100%">
+  <div class="w3-display-bottom w3-large w3-container w3-padding-16 w3-black">
+  Solar panels
+  </div>
+</div>
 
-<!-- Add font awesome icons -->
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+ <br> 
+ <div id="wrapper">
+<font color="white"><center><h1>Bio generator</h1></center>
+<hr>
+<font color="white"><center><p></p>The Bioreactor composts organic matter into Energy. It has a 4×4 inventory grid to place organic items into, and items placed inside it cannot be removed once placed. It can break down any organic matter into reliable energy for your home. The Bioreactor produces a small amount of energy for small houses and it will be the cheapest way of producing energy.</center></font>
+<br>
+<font color="white"><center><h1>Bio generator</h1></center>
+<font color="white"><center><p>The Nuclear Reactor processes Uranium Crystal Reactor Rods into Energy for use by a house or a warehouse. Rods aren’t rechargeable but you can buy them online. Also, don’t worry, the leftover could be recycled. Nuclear reactors make the most powerful of all the generators so its recommended to be used in an underwater warehouse. A Nuclear Reactor can hold a maximum of four Reactor Rods. Once placed in the Reactor, they cannot be removed until they have been fully drained</p></center>
+<br>
+<font color="white"><center><h1>Thermal generator</h1></center>
+<font color="white"><center><p>The Thermal Plant is a generator that converts nearby high temperatures (>25°C) into Energy. The Thermal Plant can produce power depending on the temperature nearby itself which is given to your home. On the Thermal Plant is a screen that displays the temperature of the surrounding area (rounded to whole degrees). We recommend to place them near a hot area like an underwater lava geyser.</p></center>
+<br>
+<font color="white"><center><h1>Water turbines</h1></center>
+<font color="white"><center><p>Water turbines will be very useful for producing energy no matter where your house will be placed, the turbine will always spin and make a flow.</p></center>
+<br>
+<font color="white"><center><h1>Solar panels</h1></center>
+<font color="white"><center><h1>Homes that are near to the surface will use solar panels that will give energy for the whole accommodation.</h1></center>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <div class="fixed">
 <a href="https://www.facebook.com/ProjectHydralo/?modal=admin_todo_tour" target="_blank" class="fa fa-facebook"></a>
 <a href="https://twitter.com/Hydralo1"  target="_blank" class="fa fa-twitter"></a>
 <a href="https://www.instagram.com/project_hydralo_2020/"  target="_blank" class="fa fa-instagram"></a>
+
 </body>
 
 </html>
